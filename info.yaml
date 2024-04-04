@@ -20,9 +20,9 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "pulse"
+  ui[0]: "ResetCH"
   ui[1]: "Reset"
-  ui[2]: "ResetCH"
+  ui[2]: ""
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
@@ -30,8 +30,8 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
+  uo[0]: "CH"
+  uo[1]: "VoutN"
   uo[2]: ""
   uo[3]: ""
   uo[4]: ""
@@ -53,8 +53,9 @@ pinout:
   # Keep only the "ua" pins you are actually using, and *delete* any unused "ua" pins.
   # The first pins is always ua[0], and the pin numbers must be sequential.
   ua[0]: "Iin"
-  ua[1]: "CL"
+  ua[1]: "Pulse"
   ua[2]: "Vout"
+  ua[3]: "CL"
 
 # Do not change!
 yaml_version: 6
