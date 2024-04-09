@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "tt_um_lcasimon_Tdc"      # Project title
+  title:        "Analog TDC"      # Project title
   author:       "Luis Carlos Alvarez Simon"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Time to Digital Converter"      # One line description of what your project does
