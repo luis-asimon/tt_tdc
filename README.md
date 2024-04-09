@@ -17,25 +17,25 @@ In a TDC using coarse and fine resolutions, the time interval between two events
 The circuit present here comprises the analog part for the fine resolution of a Time to Digital Converter based on time interpolation. A width input pulse in the interval of 20 to 60 nanoseconds is converted to a periodic square signal with a period that is 90 times wider than the input pulse. So, we can use a counter with a low frequency clock to convert the time input pulse to digital format. For example, if we use a 25MHz clock frequency, we can measure the time of the input pulse with a resolution of 444ps.    
 In the Fig. 1 we can see the block diagram of the System. We introduce an input pulse on the input "Time" (after applying a reset on the capacitors) and charge the two capacitors in the first block with a constant current. They stop charging when the pulse finishes. The second block uses the voltages generated in the first block as references to charge and discharge a capacitor, generating a square signal at the output. The period of the output signal is equal to: T=90*Delta_Time.
 
-![](../docs/system_diagram.png)
+![](system_diagram.png)
 **Figure 1.** Block diagram of the System.
 
 
 ## How to test
 Figure 2 shows the block of the System with all the inputs and outputs that we can access in the circuit. The diagram shows the signal that we need to apply for to get the desired output signal. We can apply a width pulse between 20 to 60ns (at the pin pulse), besides the reset signals to discharge the capacitors (reset and resetCH pines), one before and one after the pulse, as shown the Figure 2. Connecting an oscilloscope to the output (Vout and VoutN) allows us to see the square periodic signal with a period proportional to the width of the input pulse, as explained in the first section. CH and CL are only used to monitor the behaviour of the comparators.
 
-![](../docs/block_system.png)
+![](block_system.png)
 
 **Figure 2.** Inputs and Outputs of the System and test signals.
 
 
 Figure 3 shows the interconnection of the circuit with the frame of the chip and Figure 4 shows the simulation results for reference to the behaviour of the circuit. 
 
-![](../docs/pines_block.png)
+![](pines_block.png)
 **Figure 3.** Pines used from the frame.
  
 
-![](../docs/simulation_result.png)
+![](simulation_result.png)
 **Figure 4.** Simulation results.
 
 
