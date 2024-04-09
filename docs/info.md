@@ -21,16 +21,22 @@ In the Fig. 1 we can see the block diagram of the System. We introduce an input 
 
 
 ## How to test
-Figure 2 shows the block of the System with all the inputs and outputs that we can access in the circuit. The diagram shows the signal that we need to apply for to get the desired output signal. We can apply a width pulse between 20 to 60ns, besides the reset signal, one before the pulse and one after the pulse, like are shown in the Figure.
+Figure 2 shows the block of the System with all the inputs and outputs that we can access in the circuit. The diagram shows the signal that we need to apply for to get the desired output signal. We can apply a width pulse between 20 to 60ns (at the pin pulse), besides the reset signals to discharge the capacitors (reset and resetCH pines), one before and one after the pulse, as shown the Figure 2. Connecting an oscilloscope to the output (Vout and VoutN) allows us to see the square periodic signal with a period proportional to the width of the input pulse, as explained in the first section. CH and CL are only used to monitor the behaviour of the comparators.
 
 ![](block_system.png)
+
 **Figure 2.** Inputs and Outputs of the System and test signals.
 
-The Figure 3 shows the simulation results for reference.
+
+Figure 3 shows the interconnection of the circuit with the frame of the chip and Figure 4 shows the simulation results for reference to the behaviour of the circuit. 
+
+![](pines_block.png)
+**Figure 3.** Pines used from the frame.
+ 
 
 ![](simulation_result.png)
-**Figure 3.** Simulation results.
+**Figure 4.** Simulation results.
 
 
 ## External hardware
-You need only a digital signal generator and an oscilloscope.
+You need only a digital signal generator to generate the input pulse and reset signals, current source of 13uA to biasing and an oscilloscope to see the results.
