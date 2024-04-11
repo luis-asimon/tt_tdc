@@ -29,10 +29,10 @@ Figure 2 shows the block of the System with all the inputs and outputs that we c
 **Figure 2.** Inputs and Outputs of the System and test signals.
 
 
-Figure 3 shows the interconnection of the circuit with the frame of the chip and Figure 4 shows the simulation results for reference to the behaviour of the circuit. 
+Look at Figure 3 for the circuit's connection to the chip frame, and at Figure 4 for the simulation results showing how the circuit behaves. 
 
 ![](pines_block.png)
-**Figure 3.** Pines used from the frame.
+**Figure 3.** Pins used from the frame.
  
 
 ![](simulation_result.png)
