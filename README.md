@@ -31,11 +31,11 @@ Figure 2 shows the block of the System with all the inputs and outputs that we c
 
 Look at Figure 3 for the circuit's connection to the chip frame, and at Figure 4 for the simulation results showing how the circuit behaves.  
 
-![](pins_block.png){width=60%}
+![](pins_block.png)
 **Figure 3.** Pins used from the frame.
  
 
-![](simulation_result.png){width=65%}
+![](simulation_result.png)
 **Figure 4.** Simulation results.
 
 
