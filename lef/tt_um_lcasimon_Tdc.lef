@@ -5,8 +5,8 @@ VERSION 5.7 ;
 MACRO tt_um_lcasimon_Tdc
   CLASS BLOCK ;
   FOREIGN tt_um_lcasimon_Tdc ;
-  ORIGIN -1.000 0.100 ;
-  SIZE 157.900 BY 226.470 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 161.000 BY 225.760 ;
   OBS
       LAYER pwell ;
         RECT 107.460 173.770 110.295 174.200 ;
